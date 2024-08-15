@@ -1,0 +1,278 @@
+@import './color-variables.scss';
+@import './inputs.scss';
+@import './buttons.scss';
+@import './texts.scss';
+body {
+  overflow: hidden;
+}
+.background-theme-primary {
+  background: var(--theme-primary) !important;
+}
+.background-theme-secondary {
+  background: var(--theme-secondary) !important;
+}
+.background-primary {
+  background: var(--background-primary) !important;
+}
+.background-secondary {
+  background: var(--background-secondary) !important;
+}
+.background-teritary {
+  background: var(--background-teritary) !important;
+}
+.background-card {
+  background: var(--background-card) !important;
+}
+
+.react-joyride__tooltip {
+    button {
+        @extend .button;
+        @extend .primary;
+    }
+    button[aria-label="next"] {
+        background: var(--action-primary) !important;
+    }
+}
+
+.inputName {
+  font-size: var(--font-medium);
+  line-height: 16px;
+}
+.link {
+  color: var(--action-info) !important;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.disabled {
+  background: var(--action-disabled);
+  pointer-events: none;
+  color: var(--text-placeholder);
+}
+.hidden {
+  display: none !important;
+}
+.verticalLine {
+  position: relative;
+  min-height: 100%;
+  width: 2px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4px;
+  .line {
+    border-right: 2px solid var(--text-placeholder);
+    min-height: 50%;
+    width: 100%;
+  }
+}
+.horizonalLine {
+  position: relative;
+  min-width: 100%;
+  height: 2px;
+  .line {
+    border-top: 2px solid var(--text-placeholder);
+    min-width: 50%;
+    height: 100%;
+  }
+}
+.flex{
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.noWrap{
+  flex-wrap: nowrap !important;
+  align-items: flex-start;
+  justify-content: flex-start;
+  display: flex;
+}
+.centerContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.noGap {
+  gap: 0px !important;
+}
+.gap4 {
+  gap: 4px !important;
+}
+.gap16 {
+  gap: 16px !important;
+}
+.gap24 {
+  gap: 24px !important;
+}
+.flexColumn, .flex-column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-wrap: nowrap;
+}
+.flexSB {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+.flexFull{
+  width: 100%;
+  gap: 8px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(calc(50% - 4px), 1fr) );
+  grid-column: 1/-1;
+  &.threeColumns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32%, 1fr));
+    div:nth-child(3n - 2):last-child {
+      grid-column-end: span 3;
+    }
+  }
+}
+.flex-block, .flex-block-lock {
+  width: 100%;
+  gap: 32px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(calc(50% - 16px), 1fr) );
+  grid-column: 1/-1;
+}
+.flex-tile {
+  @extend .flex;
+  justify-content: center;
+  gap: 16px;
+  height: 100%;
+  background: var(--background-secondary);
+  text-align: left;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 16px 0;
+  @media only screen and (max-width: 600px) {
+    flex-wrap: nowrap !important;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-height: 100%;
+    overflow-y: auto !important;
+  }
+}
+.img-common {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tooltip {
+  &.warning {
+    background: var(--action-warning);
+  }
+}
+.pushToBottom {
+  margin-top: auto;
+}
+.noSelect {
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+.disabled-pointer-events {
+  pointer-events: none !important;
+}
+.__react_component_tooltip {
+  max-width: 364px;
+}
+.background-defaults, .image {
+  object-fit: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.clickable {
+  &:hover {
+    cursor: pointer;
+  }
+}
+.image {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.image-library {
+  justify-content: center;
+  img {
+    max-height: 296px;
+  }
+}
+.float-top-right {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+
+.rounded-scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+    &::-webkit-scrollbar {
+        width: 0.6em;
+        padding: 5px;
+        margin-right: 3px;
+        cursor: pointer;
+    }
+
+    &::-webkit-scrollbar-track {
+        margin: 5px;
+        -webkit-box-shadow: none;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--action-disabled);
+        border-radius: 10px;
+        margin-right: 5px !important;
+        outline: none;
+
+        // &:hover {
+        //     background-color: lighten(var(--action-disabled), 10%);
+        // }
+    }
+}
+@media only screen and (max-width: 900px), screen and (max-height: 600px) {
+  .flex-block:not(.noMobile) {
+    grid-template-columns: auto;
+  }
+  .flexFull {
+    grid-template-columns: auto;
+    &.threeColumns {
+      grid-template-columns: repeat(auto-fit, minmax(calc(50% - 4px), 1fr) );
+      div:nth-child(3n - 2):last-child {
+        grid-column-end: auto;
+      }
+      div:nth-child(2n - 1):last-child {
+        grid-column-end: span 2;
+      }
+    }
+    &.noCollapse {
+      grid-template-columns: repeat(auto-fit, minmax(calc(50% - 4px), 1fr) ) !important;
+    }
+    div:nth-child(2n - 1):last-child {
+      grid-column-end: span 2;
+    }
+  }
+  .flex > .button {
+    width: 100%;
+  }
+  .flex{
+    > .button {
+      width: 100%;
+    }
+  }
+  .truncate {
+    max-width: 296px;
+  }
+}

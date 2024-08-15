@@ -1,0 +1,261 @@
+:root {
+  --theme-white-gradient: linear-gradient(#ffffff, rgba(255, 255, 255, 0));
+}
+.animationOverlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  overflow: hidden;
+  &.Resume, &.Contact, &.SpaceNews, &.Gallery {
+    z-index: 0;
+  }
+}
+.renderContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  .scrollComponent {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.contentContainer {
+  width: 100%;
+  overflow: auto;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  h1, .headline.one {
+    padding: 32px 24px 12px 12px;
+    padding: 8px 24px;
+    background: var(--background-primary);
+    border-radius: var(--round-small);
+    box-shadow: var(--shadow-light);
+  }
+}
+.contentBackground {
+  background: var(--background-primary);
+  box-shadow: var(--shadow-light);
+  margin: 0 auto;
+  width: 80%;
+  max-width: 700px;
+  border-radius: var(--round-small);
+  animation: fadeSlideLeft 0.167s forwards;
+}
+.contentContainer.Dystopia {
+  background: var(--background-secondary);
+  height: 100%;
+  padding: 30px;
+  .pageLabelGlitch {
+    position: relative;
+    font-size: 60px;
+    color: var(--color-primary);
+    animation: fuzzGlitch 0.02s infinite;
+  }
+}
+.Enterprise {
+  * {
+    font-family: monospace;
+  }
+}
+.Spooky {
+  * {
+    font-family: "Nightscary Free Trial", cursive;
+
+    .button,
+    h1, h2, h3, h4, h5, .headlineOne, .headlineTwo, .headlineThree, .headlineFour, .headlineFive, .text-sub-headline, .text-body {
+      font-family: "Luxurious Roman", cursive !important;
+    }
+  }
+  .horizontal {
+    background: var(--theme-secondary);
+    animation: creepyNav 10s infinite;
+  }
+}
+.Safari {
+  * {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+}
+.Arcade {
+  * {
+    font-family: monospace;
+  }
+}
+.Dystopia {
+  * {
+    font-family: "Nightscary Free Trial";
+  }
+}
+.Resume,
+.Projects,
+.Contact,
+.SpaceNews,
+.Gallery {
+  .card.contact {
+    margin: auto;
+    width: 400px;
+  }
+  * {
+    font-family: 'Maven Pro', sans-serif;
+  }
+}
+.cardContainer {
+  width: 100%;
+  row-gap: 16px;
+}
+.twoCols {
+  grid-template-columns: auto auto;
+}
+.threeCols {
+  grid-template-columns: auto auto auto;
+}
+.carousel-component {
+  width: 100%;
+  * {
+    margin: 0 !important;
+    padding: 0;
+  }
+  .carousel-root {
+    // @extend .flexColumn;
+  }
+  .carousel-label {
+    position: absolute;
+    left: 0px;
+    bottom: 16px;
+    background: var(--background-primary);
+    height: fit-content !important;
+    width: fit-content !important;
+    padding: 4px 8px;
+    font-weight: 700;
+    border-top-right-radius: var(--round-medium);
+    border-bottom-right-radius: var(--round-medium);
+  }
+  .slide {
+    border-radius: var(--round-large);
+    overflow: hidden;
+    div {
+      width: 100%;
+      img {
+        // @extend .img-common;
+      }
+    }
+  }
+  .thumbs {
+    display: flex;
+    gap: 8px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    .thumb {
+      &.selected {
+        border-color: transparent;
+        border-bottom: 3px solid var(--selected-primary);
+      }
+      img {
+        // @extend .img-common;
+      }
+    }
+  }
+}
+.card {
+  width: 100%;
+  box-shadow: var(--shadow-light);
+  flex-shrink: 0;
+  padding: 12px 16px;
+  position: relative;
+  background: var(--background-card);
+  border-radius: var(--round-medium);
+  height: fit-content;
+  .flat {
+    box-shadow: none;
+  }
+  svg {
+    > g > rect,
+    > rect {
+      fill: transparent;
+    }
+  }
+  > h2, .headline.two {
+    pointer-events: none;
+    z-index: 99;
+    align-self: flex-start;
+    border-radius: var(--round-small);
+  }
+  > h3, .headline.three {
+    align-self: flex-start;
+    font-weight: 600;
+  }
+  h4, .headline.four {
+    font-weight: 600;
+  }
+  h5.text-body {
+    margin-top: auto;
+    width: 62px;
+    text-align: center;
+    border-radius: var(--round-small);
+    border: 1px solid var(--theme-primary);
+    color: var(--theme-primary);
+    padding: 8px 16px;
+    transition: 0.167s ease-in-out;
+  }
+  h5.text-body:hover {
+    background: var(--theme-primary);
+    color: var(--light);
+    cursor: pointer;
+  }
+}
+.chart {
+  svg > g:last-child() > g > rect:only-of-type { 
+    fill: var(--background-secondary);
+  }
+  text {
+    fill: var(--light);
+    stroke: transparent;
+    stroke-width: 0;
+  }
+  :nth-child(2) {
+    margin: auto;
+    margin-top: 32px;
+  }
+}
+.designBackgroundContainer {
+  margin: 0 auto;
+  max-width: 2400px;
+  top: 0;
+  width: 100%;
+}
+.designBackground {
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-width: 900px), screen and (max-height: 600px) {
+  .card.contact {
+    width: calc(100% - 16px) !important;
+  }
+  .cardContainer {
+    grid-template-columns: auto !important;
+    .card {
+      //padding: 8px 0px 32px 0px !important;
+      .chart {
+        max-width: var(--width);
+      }
+    }
+  }
+  .gridContext {
+    grid-template-columns: auto auto !important;
+    row-gap: 32px;
+    column-gap: 24px !important;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90% !important;
+  }
+}

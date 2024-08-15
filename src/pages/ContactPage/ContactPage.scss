@@ -1,0 +1,23 @@
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  align-items: center;
+  .contactItem {
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    svg {
+      fill: var(--light);
+    }
+    h4, .headline.four {
+      margin-left: 8px;
+      color: var(--light);
+    }
+  }
+  .button {
+    opacity: 0;
+    width: 100%;
+  }
+}

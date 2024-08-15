@@ -1,0 +1,20 @@
+#top-nav {
+    position: fixed;
+    width: 100vw;
+    align-items: center;
+    gap: 80px;
+    justify-content: center;
+    z-index: var(--layer-5);
+    background-color: var(--background-card);
+    a {
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: all var(--animation-time-1);
+        &.selected, &:hover {
+            .text-headline-secondary {
+                color: var(--selected-secondary) !important;
+            }
+            background-color: rgba(255, 255, 255, 0.308);
+        }
+    }
+}
