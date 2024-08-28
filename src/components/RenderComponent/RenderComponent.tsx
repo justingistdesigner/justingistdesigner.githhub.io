@@ -151,7 +151,7 @@ export const CalculatedScrollComponent = (props: {
     <div
       ref={resizeRef}
       id="scrollComponent"
-      className={`scrollComponent rounded-scroll ${props.className}`}
+      className={`scrollComponent ${props.className}`}
       style={{
         overflowY: props.overflowHidden ? "hidden" : "auto",
       }}

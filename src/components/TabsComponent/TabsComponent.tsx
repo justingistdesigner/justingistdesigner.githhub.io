@@ -17,7 +17,7 @@ const TabsComponent = ({
     ...rest
 }: TabsComponentProps) => {
     return (
-        <div className={`tabs rounded-scroll ${rest?.className}`}>
+        <div className={`tabs ${rest?.className}`}>
             <div className="tabs-scroller">
                 {tabs.map(page => (
                     <div

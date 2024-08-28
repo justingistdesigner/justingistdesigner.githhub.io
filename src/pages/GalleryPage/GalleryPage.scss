@@ -1,6 +1,40 @@
 #gallery-image-container {
     margin-top: 48px;
+    justify-content: center;
+    margin-bottom: 48px;
     .flex-column {
         width: fit-content;
+        align-items: center;
+    }
+}
+
+#gallery-image-selector {
+    justify-content: space-between;
+    height: 100%;
+    .disabled {
+        cursor: not-allowed;
+        svg {
+            color: var(--action-disabled);
+        }
+    }
+    .loadingComponent, img {
+        width: 100%;
+        padding: 0px;
+        animation-duration: var(--animation-time-2);
+        * {
+            border-color: var(--theme-primary);
+        }
+    }
+    .loadingComponent {
+        aspect-ratio: 4/3;
+    }
+    .image-container {
+        width: 100%;
+        max-width: 880px;
+        min-height: fit-content;
+    }
+    .flex {
+        justify-content: center;
+        flex-wrap: nowrap;
     }
 }
