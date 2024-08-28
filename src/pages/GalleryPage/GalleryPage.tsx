@@ -52,55 +52,55 @@ const images: iGalleryImage[] = [
   },
   {
     src: step_one,
-    label: 'Meta Campaign Workflow',
-    description: 'A flow designed to distrbute campaigns using Meta`s apis! This was the first step in the workflow. The user would fill out the campaign name, objective of the campaign, overall budget for the duration of the campaign, & any Special Industry requirements that denote special rules for targeting within Meta.',
+    label: 'TikTok Campaign Workflow',
+    description: 'A flow designed to distrbute campaigns using TikTok`s apis! This was the first step in the workflow. The user would fill out the campaign name, objective of the campaign, overall budget for the duration of the campaign, & any Special Industry requirements that denote special rules for targeting within TikTok.',
     galleryImages: [
       {
         src: step_two,
-        label: 'Meta Campaign Workflow: Step 2',
-        description: 'Here the user adjusting the Ad Group, which is the next step in the Hierarchy of Meta`s Advertising System. Here the user can edit Ad Group Name and Promition Type, which would adjust settings further down, based on selection.',
+        label: 'TikTok Campaign Workflow: Step 2',
+        description: 'Here the user adjusting the Ad Group, which is the next step in the Hierarchy of TikTok`s Advertising System. Here the user can edit Ad Group Name and Promition Type, which would adjust settings further down, based on selection.',
         galleryImages: []
       },
       {
         src: step_three,
-        label: 'Meta Campaign Workflow: Step 3',
+        label: 'TikTok Campaign Workflow: Step 3',
         description: 'Here the user adjusts Targeting, we start with a single option, Audience Targeting Approach, which has two selections, Broad & Narrow. These selections effect options further down in the workflow.',
         galleryImages: []
       },
       {
         src: step_four,
-        label: 'Meta Campaign Workflow: Step 4',
-        description: 'Here the user further adjusts Targeting through Demographics. This includes Gender, Age, Language, Househould Income, & Spending Power. All variables in the fields are generated via Amazon APIs. Some selections are disabled, due to selections made earlier in the workflow.',
+        label: 'TikTok Campaign Workflow: Step 4',
+        description: 'Here the user further adjusts Targeting through Demographics. This includes Gender, Age, Language, Househould Income, & Spending Power. All variables in the fields are generated via TikTok APIs. Some selections are disabled, due to selections made earlier in the workflow.',
         galleryImages: []
       },
       {
         src: step_five,
-        label: 'Meta Campaign Workflow: Step 5',
+        label: 'TikTok Campaign Workflow: Step 5',
         description: 'Here the user Enables or Disables, Smart Interests & Behaviours. This is a setting that automatically adjusts settings to maximize your Ad.',
         galleryImages: []
       },
       {
         src: step_six,
-        label: 'Meta Campaign Workflow: Step 6',
+        label: 'TikTok Campaign Workflow: Step 6',
         description: 'Here the user adjusts Targeting for Devices. Allowing them to target only users with certain devices and Operating Systems.',
         galleryImages: []
       },
       {
         src: step_seven,
-        label: 'Meta Campaign Workflow: Step 7',
+        label: 'TikTok Campaign Workflow: Step 7',
         description: 'In this step, the User is able to add in the Creative for the Ad. They can adjust Ad Name, Disclaimer, Ad Text, the Call to Action button text, and the URL that the user will be sent to, when the Ad is clicked.',
         galleryImages: []
       },
       {
         src: step_eight,
-        label: 'Meta Campaign Workflow: Step 8',
-        description: 'Here the user can add an Asset. This can be a Video, Image or Collection of Images. Each has it`s own troubleshooting flow to walk the user through adjusting it to match Amazon standards.',
+        label: 'TikTok Campaign Workflow: Step 8',
+        description: 'Here the user can add an Asset. This can be a Video, Image or Collection of Images. Each has it`s own troubleshooting flow to walk the user through adjusting it to match TikTok standards.',
         galleryImages: []
       },
       {
         src: step_nine,
-        label: 'Meta Campaign Workflow: Step 9',
-        description: 'Finally, the user will be met by a Finalize screen. This will summarize all the settings and options they selected through the workflow and generate an Actual Ad Preview directly from Amazon.',
+        label: 'TikTok Campaign Workflow: Step 9',
+        description: 'Finally, the user will be met by a Finalize screen. This will summarize all the settings and options they selected through the workflow and generate an Actual Ad Preview directly from TikTok.',
         galleryImages: []
       }
     ]
