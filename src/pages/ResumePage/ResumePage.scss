@@ -8,7 +8,7 @@ $max-image-height: 40vh;
     max-width: $max-image-width;
     max-height: $max-image-height;
     border-radius: var(--round-large);
-    box-shadow: var(--shadow-dark);
+    // box-shadow: var(--shadow-dark); was causing issues on mobile
   }
   .card {
     max-width: 720px;

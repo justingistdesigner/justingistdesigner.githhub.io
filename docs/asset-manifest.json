@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.cdf0b9f4.css",
+    "main.css": "/static/css/main.e8e40296.css",
     "main.js": "/static/js/main.c489bd8f.js",
     "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
     "static/media/Three-Phones-Mockup.png": "/static/media/Three-Phones-Mockup.2fdaab77f52ef627bf4d.png",
@@ -45,12 +45,12 @@
     "static/media/Squiggly.svg": "/static/media/Squiggly.c5ad318c4e06c74f7ffe3e47e5bfcbd1.svg",
     "static/media/microsoft-windows-22.svg": "/static/media/microsoft-windows-22.18c1acd8d78bbec10356513ba98a0d95.svg",
     "static/media/textbox.svg": "/static/media/textbox.cb172bda41092598c6840b0fb7fdf475.svg",
-    "main.cdf0b9f4.css.map": "/static/css/main.cdf0b9f4.css.map",
+    "main.e8e40296.css.map": "/static/css/main.e8e40296.css.map",
     "main.c489bd8f.js.map": "/static/js/main.c489bd8f.js.map",
     "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cdf0b9f4.css",
+    "static/css/main.e8e40296.css",
     "static/js/main.c489bd8f.js"
   ]
 }
