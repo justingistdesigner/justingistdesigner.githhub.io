@@ -16,7 +16,7 @@ $top-bar-height: 48px;
         max-width: 880PX;
         margin: 0 8px;
         height: min-content;
-        max-height: min-content;
+        max-height: calc(100% - 128px);
         border-radius: var(--round-medium);
         .text-headline-secondary {
             color: var(--dark) !important;

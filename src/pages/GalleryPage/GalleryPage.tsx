@@ -188,25 +188,23 @@ const GalleryImageSelector = (image: iGalleryImage) => {
   const diableNext = page === images.length - 1 ? 'disabled' : '';
   const enableSelectors = images.length > 1;
   return (
-    <ColumnLayout id="gallery-image-selector" className={`${enableSelectors ? 'max-height' : ''}`}>
-      <ColumnLayout>
+    <ColumnLayout id="gallery-image-selector" gap={8} className={`${enableSelectors ? 'max-height' : ''}`}>
+      <ColumnLayout style={{ maxHeight: '80%' }}>
         <Headline secondary size={3}>{images[page].label}</Headline>
-        <RowLayout>
-          {loading ? <Loading useLoadingAnimation={0} /> : (
-            <div className="image-container">
-              <img
-                src={images[page].src}
-                alt={images[page].label}
-                className={className}
-              />
-            </div>
-          )}
-        </RowLayout>
-        <Headline secondary size={5}>{images[page].description}</Headline>
+        {loading ? <Loading useLoadingAnimation={0} /> : (
+          <div className="image-container">
+            <img
+              src={images[page].src}
+              alt={images[page].label}
+              className={className}
+            />
+          </div>
+        )}
       </ColumnLayout>
-      {enableSelectors && (
-        <ColumnLayout>
-          <RowLayout layoutClass="flexSB">
+      <ColumnLayout>
+        <Headline secondary size={5}>{images[page].description}</Headline>
+        {enableSelectors && (
+          <RowLayout id="button-layout" layoutClass="flexSB">
             <Button
               className={disablePrevious}
               onClick={() => changePage(false)}
@@ -220,8 +218,8 @@ const GalleryImageSelector = (image: iGalleryImage) => {
                 <Icon icon="ChevronRight" fontSize={64} />
               </Button>
           </RowLayout>
-        </ColumnLayout>
-      )}
+        )}
+      </ColumnLayout>
     </ColumnLayout>
   );
 };
