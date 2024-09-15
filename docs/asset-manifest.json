@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6b628372.css",
-    "main.js": "/static/js/main.686ad83a.js",
+    "main.css": "/static/css/main.a09dcdf8.css",
+    "main.js": "/static/js/main.5247767a.js",
     "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
     "static/media/Three-Phones-Mockup.png": "/static/media/Three-Phones-Mockup.2fdaab77f52ef627bf4d.png",
     "static/media/Racing-Mockup.png": "/static/media/Racing-Mockup.4f1ed017479257898d83.png",
@@ -15,6 +15,17 @@
     "static/media/step_six.png": "/static/media/step_six.a932e5ca17a9bd8ab9a2.png",
     "static/media/step_five.png": "/static/media/step_five.c83288dd20bab7ef6f29.png",
     "static/media/step_two.png": "/static/media/step_two.0564422ba35aee75dc46.png",
+    "static/media/sonar_login_4.png": "/static/media/sonar_login_4.c4f38029aec7f535a417.png",
+    "static/media/sonar_login_6.png": "/static/media/sonar_login_6.cf5e19ebb12b3096e523.png",
+    "static/media/sonar_login_7.png": "/static/media/sonar_login_7.64b0232364fd3ce5743c.png",
+    "static/media/sonar_login_5.png": "/static/media/sonar_login_5.32d4f67318aa5ff755e6.png",
+    "static/media/sonar_login_2.png": "/static/media/sonar_login_2.87edc18e905b1e9951ce.png",
+    "static/media/sonar_login_1.png": "/static/media/sonar_login_1.25069a2aa09890543b88.png",
+    "static/media/sonar_login_3.png": "/static/media/sonar_login_3.c230bf499cab32b7cc05.png",
+    "static/media/sonar_1.png": "/static/media/sonar_1.4d852ba63869165e1853.png",
+    "static/media/sonar_4.png": "/static/media/sonar_4.e4c2871a725ba7b1ed21.png",
+    "static/media/sonar_3.png": "/static/media/sonar_3.c63264fb474814f41fb8.png",
+    "static/media/sonar_2.png": "/static/media/sonar_2.9cd66f8e763caaeb41c6.png",
     "static/media/hallow.avif": "/static/media/hallow.090bd0dfa9490e9f8d78.avif",
     "static/media/taco.avif": "/static/media/taco.bcb3fee631ededb61557.avif",
     "static/media/Background.avif": "/static/media/Background.35c8aef0aa2cd718d614.avif",
@@ -45,12 +56,12 @@
     "static/media/Squiggly.svg": "/static/media/Squiggly.c5ad318c4e06c74f7ffe3e47e5bfcbd1.svg",
     "static/media/microsoft-windows-22.svg": "/static/media/microsoft-windows-22.18c1acd8d78bbec10356513ba98a0d95.svg",
     "static/media/textbox.svg": "/static/media/textbox.cb172bda41092598c6840b0fb7fdf475.svg",
-    "main.6b628372.css.map": "/static/css/main.6b628372.css.map",
-    "main.686ad83a.js.map": "/static/js/main.686ad83a.js.map",
+    "main.a09dcdf8.css.map": "/static/css/main.a09dcdf8.css.map",
+    "main.5247767a.js.map": "/static/js/main.5247767a.js.map",
     "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b628372.css",
-    "static/js/main.686ad83a.js"
+    "static/css/main.a09dcdf8.css",
+    "static/js/main.5247767a.js"
   ]
 }

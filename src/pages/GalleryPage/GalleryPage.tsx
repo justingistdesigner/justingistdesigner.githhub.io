@@ -16,6 +16,17 @@ import step_six from "../../assets/step_six.png";
 import step_seven from "../../assets/step_seven.png";
 import step_eight from "../../assets/step_eight.png";
 import step_nine from "../../assets/step_nine.png";
+import sonar_login_1 from "../../assets/sonar_login_1.png";
+import sonar_login_2 from "../../assets/sonar_login_2.png";
+import sonar_login_3 from "../../assets/sonar_login_3.png";
+import sonar_login_4 from "../../assets/sonar_login_4.png";
+import sonar_login_5 from "../../assets/sonar_login_5.png";
+import sonar_login_6 from "../../assets/sonar_login_6.png";
+import sonar_login_7 from "../../assets/sonar_login_7.png";
+import sonar_1 from "../../assets/sonar_1.png";
+import sonar_2 from "../../assets/sonar_2.png";
+import sonar_3 from "../../assets/sonar_3.png";
+import sonar_4 from "../../assets/sonar_4.png";
 import { Button } from "@mui/material";
 import ModalComponent, { iModalComponentExport } from "../../components/Modal/ModalComponent";
 import Icon from "../../components/Icon/Icon";
@@ -32,24 +43,6 @@ const imageWidth = 320;
 const imageHeight = 200;
 
 const images: iGalleryImage[] = [
-  {
-    src: dashboardMockup,
-    label: 'TigerPistol Dashboard',
-    description: 'This was a Dashboard redesign I designed for TigerPistol`s Meta, Amazon & TikTok Advertising Management system.',
-    galleryImages: []
-  },
-  {
-    src: racingPhones,
-    label: 'Mobile Racing App',
-    description: 'A mockup of mobile designs for a racing app!',
-    galleryImages: []
-  },
-  {
-    src: threePhones,
-    label: 'Mobile Social App',
-    description: 'A mockup of mobile designs for a social app!',
-    galleryImages: []
-  },
   {
     src: step_one,
     label: 'TikTok Campaign Workflow',
@@ -104,6 +97,92 @@ const images: iGalleryImage[] = [
         galleryImages: []
       }
     ]
+  },
+  {
+    src: sonar_1,
+    label: 'Sonar Redesign',
+    description: 'SONAR was a service that companies would put onto their websites and it would track companies and people who visited the site. The FOURTH slide, is what I recieved at the beginning of the week-long redesign.',
+    galleryImages: [
+      {
+        src: sonar_2,
+        label: 'Sonar Redesign - Customer Page',
+        description: 'This page appears after a customer is selected from the previous page. It shows the user details of the company, HVP (High Value Pages) visited, metrics & a consolidated view of sessions that may be selected to see a timeline of the session. See next slide for timeline. ',
+        galleryImages: []
+      },
+      {
+        src: sonar_3,
+        label: 'Sonar Redesign - Actionable Timeline',
+        description: 'Here a user can view the timeline for a session selected on the datagrid in the previous screen. It gives insights on the visit and marks any HVP (High Value Pages) visited.',
+        galleryImages: []
+      },
+      {
+        src: sonar_4,
+        label: 'Sonar Redesign - Received Code',
+        description: 'This screen is what I recieved at the beginning of the redesign. The redesign took 1 week. The CEO during the redesign meeting, was quoted saying "I am finally proud of this project!"',
+        galleryImages: []
+      }
+    ]
+  },
+  {
+    src: sonar_login_1,
+    label: 'Sonar Login',
+    description: 'SONAR was a service that companies would put onto their websites and it would track companies and people who visited the site. This was the landing page to Login to the site',
+    galleryImages: [
+      {
+        src: sonar_login_2,
+        label: 'Sonar Login - Two Factor',
+        description: 'Here the user would input their two factor authentication',
+        galleryImages: []
+      },
+      {
+        src: sonar_login_3,
+        label: 'Sonar Login - Partner Selection',
+        description: 'Here the user would select which Partner/Organization they would like to view upon login. Each login could have multiple Partners attached to the account',
+        galleryImages: []
+      },
+      {
+        src: sonar_login_4,
+        label: 'Sonar Login - Single Sign On (SSO)',
+        description: 'Here the user would use our SSO service to sign on to the platform',
+        galleryImages: []
+      },
+      {
+        src: sonar_login_5,
+        label: 'Sonar Login - Forgot Password',
+        description: 'Here the user would input their Email Address and click `Submit` to continue the process of recovering their account. An Email would be sent to the email attached to the login information',
+        galleryImages: []
+      },
+      {
+        src: sonar_login_6,
+        label: 'Sonar Login - Email Sent',
+        description: 'Here the user may see the Email associated with the account and a confirmation that the email was sent. Also are given a route back to login and the ability to send another email',
+        galleryImages: []
+      },
+      {
+        src: sonar_login_7,
+        label: 'Sonar Login - Reset Password',
+        description: 'After recieving the email, the user would adjust their password so that they could recover their account and login',
+        galleryImages: []
+      }
+    ]
+  },
+  {
+    src: dashboardMockup,
+    label: 'TigerPistol Dashboard',
+    description: 'This was a Dashboard redesign I designed for TigerPistol`s Meta, Amazon & TikTok Advertising Management system.',
+    galleryImages: []
+  },
+  {
+    src: racingPhones,
+    label: 'Mobile Racing App',
+    description: 'A mockup of mobile designs for a racing app!',
+    galleryImages: []
+  },
+  {
+    src: threePhones,
+    label: 'Mobile Social App',
+    description: 'A mockup of mobile designs for a social app!',
+    galleryImages: []
   }
 ];
 
@@ -211,12 +290,12 @@ const GalleryImageSelector = (image: iGalleryImage) => {
             >
               <Icon icon="ChevronLeft" fontSize={64} />
             </Button>
-              <Button
-                className={diableNext}
-                onClick={() => changePage(true)}
-              >
-                <Icon icon="ChevronRight" fontSize={64} />
-              </Button>
+            <Button
+              className={diableNext}
+              onClick={() => changePage(true)}
+            >
+              <Icon icon="ChevronRight" fontSize={64} />
+            </Button>
           </RowLayout>
         )}
       </ColumnLayout>
